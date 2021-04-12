@@ -12,4 +12,7 @@ return [
     |
     */
     'token' => env('TELEGRAM_TOKEN'),
+
+
+    'new_deals_chat' => env('TELEGRAM_NEW_DEALS_CHAT', 0),
 ];

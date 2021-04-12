@@ -13,12 +13,14 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
+/*Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
-});
+});*/
 
 Route::middleware([])->group(function (){
 
     Route::any('assignVisit', 'CRMController@assignVisitAction');
 
 });
+
+Route::any('newDeal', 'CRMController@newDealAction');
